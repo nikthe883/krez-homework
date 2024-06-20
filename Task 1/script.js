@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dropdownToggles.forEach(toggle => {
       toggle.addEventListener('click', toggleDropDownMenu);
     });
-    console.log("check " + canChangePassword.checked)
+   
 
     // Loop through all sub-menu items
     subMenuItems.forEach(item => {
