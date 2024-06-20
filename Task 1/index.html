@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts: Material Symbols Outlined -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@30,300,0,0"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="link-our-shops">
+          <a href="#">Нашите Магазини </a>
+
+          <span class="material-symbols-outlined"> north_east </span>
+        </div>
+      </div>
+      <div class="mid-header">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="vl"></div>
+        <div class="top-down-chain-shops">
+          <span class="simple-text-icons">Верига магазини KREZ:</span>
+          <button class="dropdown-toggle btn-dropdown" data-target="dropdown1">
+            KREZ Alians B2B
+          </button>
+          <div class="dropdown" id="dropdown1">
+            <a href="#1">KREZ Alians B2B</a>
+            <a href="#2">KREZ Alians 2</a>
+            <a href="#3">KREZ Alians 2</a>
+            <a href="#4">KREZ Alians 3</a>
+            <a href="#5">KREZ Alians 4</a>
+            <a href="#6">KREZ Alians 5</a>
+          </div>
+        </div>
+        <form class="search-bar-form">
+          <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input
+              class="search-input"
+              type="search"
+              placeholder="Търси по име, sku, марка.."
+            />
+          </div>
+        </form>
+        <div class="dropdown-registration">
+          <div
+            class="dropdown-toggle simple-text-icons entry-registration"
+            id="entry-registration"
+            data-target="dropdown2"
+          >
+            <span class="person-icon material-symbols-outlined"> person </span>
+
+            <span>Вход или Регистрация</span>
+            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+          </div>
+          <div class="dropdown" id="dropdown2">
+            <a href="#1">Вход</a>
+            <a href="#2">Регистрация</a>
+          </div>
+        </div>
+
+        <div class="additional-icons simple-text-icons">
+          <div class="notes">
+            <span class="notes-icon material-symbols-outlined">
+              format_list_bulleted
+            </span>
+          </div>
+          <div class="cart" id="shopping-cart">
+            <span class="cart-icon material-symbols-outlined">
+              shopping_cart
+            </span>
+            <div class="total-shopping-cart" id="total-shopping-cart">0</div>
+          </div>
+          <div class="plus">
+            <span class="plus-icon material-symbols-outlined">
+              add_circle
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <menu>
+      <span class="material-symbols-outlined simple-text-icons"> sort </span>
+      <ul class="main-menu">
+        <li>
+          <a href="#" class="simple-text-icons uppercase-text"
+            >Всички продукти</a
+          >
+        </li>
+        <li>
+          <a href="#" class="simple-text-icons uppercase-text">Промоции</a>
+        </li>
+        <li><a href="#" class="simple-text-icons uppercase-text">Марки</a></li>
+        <li><a href="#" class="simple-text-icons uppercase-text">Блог</a></li>
+        <li><a href="#" class="simple-text-icons uppercase-text">За нас</a></li>
+        <li>
+          <a href="#" class="simple-text-icons uppercase-text">Складове</a>
+        </li>
+        <li>
+          <a href="#" class="simple-text-icons uppercase-text">Контакти</a>
+        </li>
+      </ul>
+    </menu>
+    <main>
+      <div class="container-sub-menu">
+        <div class="where">
+          <span class="simple-text-body" id="where-text">Начало </span>
+        </div>
+        <div class="sub-menu-options-container">
+          <span class="simple-text-body uppercase-text">Моят Профил</span>
+          <span class="simple-text-body uppercase-text">Онлайн Поръчки</span>
+          <span class="simple-text-body uppercase-text">Всички Поръчки</span>
+          <span class="simple-text-body uppercase-text"
+            >Задължения/Фактури</span
+          >
+          <span class="simple-text-body uppercase-text">Данни за Фактури</span>
+          <span class="simple-text-body uppercase-text">Данни за Фактури</span>
+          <span class="simple-text-body uppercase-text"
+            >Абонамент за Бюлетин</span
+          >
+          <span class="simple-text-body uppercase-text active"
+            ><div class="material-symbols-outlined arrow-icon">
+              arrow_forward
+            </div>
+            Настройки на Профила</span
+          >
+
+          <span class="simple-text-body uppercase-text">Изход</span>
+        </div>
+      </div>
+
+      <div class="container-profile-settings">
+        <h2 class="uppercase-text">Настройки на Профила</h2>
+        <div class="profile-settings">
+          <div class="name-settings">
+            <span class="simple-text-body">Информация за Профила</span>
+            <hr />
+            <label for="change-first-name">Име:</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="Име"
+              id="change-first-name"
+            />
+            <label for="change-last-name">Фамилия:</label>
+            <input
+              type="text"
+              name="lname"
+              placeholder="Фамилия"
+              id="change-last-name"
+            />
+          </div>
+
+          <div class="password-email-setting">
+            <span class="simple-text-body">E-mail и парола</span>
+            <hr />
+
+            <label for="change-email">E-mail:</label>
+            <input
+              type="text"
+              name="fname"
+              placeholder="user@mail.bg"
+              id="change-email"
+            />
+
+            <input id="canChangePass" type="checkbox" />
+            <label for="canChangePass" class="indented-checkbox-text"
+              >Промени парола</label
+            >
+
+            <div class="password-settings">
+              <label for="old-password">Текуща парола *</label>
+
+              <input
+                type="text"
+                name="lname"
+                id="old-password"
+                required
+                disabled
+              />
+
+              <label for="new-password">Нова Парола *</label>
+
+              <input
+                type="text"
+                name="lname"
+                id="new-password"
+                required
+                disabled
+              />
+
+              <div class="password-strength" id="password-strength"></div>
+              <div class="power-container">
+                <div id="power-point">
+                  Сигурност на паролата: няма въведена парола
+                </div>
+              </div>
+
+              <label for="confirm-new-password"
+                >Потвърдете новата парола *</label
+              >
+
+              <input
+                type="text"
+                name="lname"
+                id="confirm-new-password"
+                required
+                disabled
+              />
+            </div>
+
+            <button class="btn btn-save" id="btn-save">Запази</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-top-left">
+            <h2 class="simple-text-icons">КРЕЗ Алианс ЕООД</h2>
+            <span class="simple-text-body"
+              ><strong class="simple-text-icons">B2B платформа </strong
+              >предназначена за корпоративни клиенти и обекти.</span
+            >
+          </div>
+          <div class="vl footer-vl"></div>
+          <div class="footer-top-right">
+            <menu class="footer-menu">
+              <ul>
+                <li>
+                  <a href="#" class="simple-text-icons uppercase-text"
+                    >За нас</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="simple-text-icons uppercase-text">Блог</a>
+                </li>
+                <li>
+                  <a href="#" class="simple-text-icons uppercase-text"
+                    >Общи условия</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="simple-text-icons uppercase-text"
+                    >Контакти</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="simple-text-icons uppercase-text"
+                    >Къде да откриете продукти?</a
+                  >
+                </li>
+              </ul>
+            </menu>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <a href="#" class="simple-text-body">
+            &copy; ТМ КРЕЗ. Всички права запазени</a
+          >
+          <a href="#" class="simple-text-body">
+            Политика на поверителност (GDPR)</a
+          >
+          <a href="#" class="simple-text-body"> Онлайн магазин от мен</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
